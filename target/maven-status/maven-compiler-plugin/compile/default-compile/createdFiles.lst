@@ -1,3 +1,4 @@
+com\globalss\test\service\pojo\Response.class
 com\globalss\test\service\pojo\AddSubtractRequest.class
 com\globalss\test\SpringBootRestExampleApplication.class
 com\globalss\test\service\WsdlService.class
@@ -5,6 +6,7 @@ com\globalss\test\controller\WsdlController.class
 com\globalss\test\service\pojo\SubtractResponse.class
 com\globalss\test\service\pojo\AddRequest.class
 com\globalss\test\service\pojo\AddResponse.class
+com\globalss\test\service\pojo\FirstLevelResponse.class
 com\globalss\test\WelcomeController.class
 com\globalss\test\service\pojo\SubtractRequest.class
 com\globalss\test\web\WsdlServiceImpl.class

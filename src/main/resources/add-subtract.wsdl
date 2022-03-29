@@ -22,18 +22,28 @@
     </xs:complexType>
     <xs:complexType name="addSubtractResponse">
         <xs:sequence>
-            <xs:element minOccurs="0" name="addResponse" type="tns:addResponse"/>
-            <xs:element minOccurs="0" name="subtractResponse" type="tns:subtractResponse"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="addResponse" nillable="true" type="tns:addResponse"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="subtractResponse" nillable="true" type="tns:subtractResponse"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="addResponse">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="response" type="tns:response"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="response">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="firstLevelResponse" type="tns:firstLevelResponse"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="firstLevelResponse">
         <xs:sequence>
             <xs:element minOccurs="0" name="output" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="subtractResponse">
         <xs:sequence>
-            <xs:element minOccurs="0" name="output" type="xs:string"/>
+            <xs:element minOccurs="0" name="response" type="tns:response"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element name="AddSubtractRequest" type="tns:AddSubtractRequest"/>

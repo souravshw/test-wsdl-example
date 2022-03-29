@@ -6,5 +6,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AddResponse {
-  String output;
+  Response response;
 }
